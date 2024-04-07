@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Logo = styled.h1`
   font-weight: 400;
   font-size: 1.5rem;
-  color: var(--subcolor);
+  color: var(--textcolor);
 `;
 
 const LogoSub = styled(Logo)`
@@ -18,7 +18,8 @@ const HeaderWrapper = styled.div`
   width: 100%;
   top: 0;
   position: sticky;
-  background-color: white;
+  background-color: var(--subcolor);
+  border-bottom: 1px solid #3b3b3b;
 `;
 
 const NavbarWrapper = styled.ul`

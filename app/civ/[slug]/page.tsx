@@ -1,7 +1,7 @@
 "use client";
+
+import { device } from "@/app/breakpoints";
 import styled from "styled-components";
-import { device } from "../breakpoints";
-import data from "../data/civils.json";
 
 const Wrapper = styled.section`
   margin: 2rem 4rem 2rem 4rem;
@@ -40,12 +40,10 @@ const ImageCard = styled.div`
     object-fit: cover;
     border-radius: 10px;
   }
-  overflow: hidden;
-  border-radius: 10px;
 
   :hover {
-    scale: 1.1;
-    transition: scale 0.3s ease;
+    filter: grayscale(60%);
+    transition: filter 0.3s ease;
   }
 `;
 
@@ -58,19 +56,19 @@ const GridTitle = styled.h1`
   font-weight: 700;
 `;
 
-export default function GridComponent() {
+export default function CivPage() {
   return (
-    <Wrapper>
-      <GridContainer>
-        {data.civs.map((civ, index) => (
+    <>
+      <Wrapper>
+        <GridContainer>
           <GridItem key={index}>
-            <GridTitle>{civ.title}</GridTitle>
+            <GridTitle>{item.title}</GridTitle>
             <ImageCard>
-              <img src={civ.thumbnail} alt={civ.title} />
+              <img src={item.thumbnail} alt={item.title} />
             </ImageCard>
           </GridItem>
-        ))}
-      </GridContainer>
-    </Wrapper>
+        </GridContainer>
+      </Wrapper>
+    </>
   );
 }

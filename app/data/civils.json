@@ -1,66 +1,145 @@
-[
-    {
-    "title": "English",
-    "thumbnail": "./civ-english.jpg"
-},
 {
-    "title": "French",
-    "thumbnail": "./civ-french.jpg"
-},
-{
-    "title": "Abbasid Dynasty",
-    "thumbnail": "./civ-abbasid-dynasty.jpg"
-},
-{
-    "title": "Byzantines",
-    "thumbnail": "./civ-byzantines.jpg"
-},
-{
-    "title": "Chinese",
-    "thumbnail": "./civ-chinese.jpg"
-},
-{
-    "title": "Delhi Sultanate",
-    "thumbnail": "./civ-delhi-sultanate.jpg"
-},
-{
-    "title": "Holy Roman Empire",
-    "thumbnail": "./civ-holy-roman-empire.jpg"
-},
-{
-    "title": "Japanese",
-    "thumbnail": "./civ-japanese.jpg"
-},
-{
-    "title": "Malians",
-    "thumbnail": "./civ-malians.jpg"
-},
-{
-    "title": "Mongols",
-    "thumbnail": "./civ-mongols.jpg"
-},
-{
-    "title": "Ottomans",
-    "thumbnail": "./civ-ottomans.jpg"
-},
-{
-    "title": "Rus",
-    "thumbnail": "./civ-rus.jpg"
-},
-{
-    "title": "Ayyubids",
-    "thumbnail": "./civ-ayyubids.jpg"
-},
-{
-    "title": "Jeanne d'Arc",
-    "thumbnail": "./civ-jeanne-darc.jpg"
-},
-{
-    "title": "Order of the Dragon",
-    "thumbnail": "./civ-order-of-the-dragon.jpg"
-},
-{
-    "title": "Zhu Xi's Legacy",
-    "thumbnail": "./civ-zhu-xis-legacy.jpg"
+    "civs": [
+        {
+            "title": "English",
+            "thumbnail": "./civ-english.jpg",
+            "slug": "english",
+            "military": {
+                "barracks": ["spearman"]
+            }
+        },
+        {
+            "title": "French",
+            "thumbnail": "./civ-french.jpg",
+            "slug": "french",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Abbasid Dynasty",
+            "thumbnail": "./civ-abbasid-dynasty.jpg",
+            "slug": "abbasid-dynasty",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Byzantines",
+            "thumbnail": "./civ-byzantines.jpg",
+            "slug": "byzantines",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Chinese",
+            "thumbnail": "./civ-chinese.jpg",
+            "slug": "chinese",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Delhi Sultanate",
+            "thumbnail": "./civ-delhi-sultanate.jpg",
+            "slug": "delhi-sultanate",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Holy Roman Empire",
+            "thumbnail": "./civ-holy-roman-empire.jpg",
+            "slug": "holy-roman-empire",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Japanese",
+            "thumbnail": "./civ-japanese.jpg",
+            "slug": "japanese",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Malians",
+            "thumbnail": "./civ-malians.jpg",
+            "slug": "malians",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Mongols",
+            "thumbnail": "./civ-mongols.jpg",
+            "slug": "mongols",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Ottomans",
+            "thumbnail": "./civ-ottomans.jpg",
+            "slug": "ottomans",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Rus",
+            "thumbnail": "./civ-rus.jpg",
+            "slug": "rus",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Ayyubids",
+            "thumbnail": "./civ-ayyubids.jpg",
+            "slug": "ayyubids",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Jeanne d'Arc",
+            "thumbnail": "./civ-jeanne-darc.jpg",
+            "slug": "jeanne-darc",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Order of the Dragon",
+            "thumbnail": "./civ-order-of-the-dragon.jpg",
+            "slug": "order-of-the-dragon",
+            "military": {
+                "barracks": []
+            }
+        },
+        {
+            "title": "Zhu Xi's Legacy",
+            "thumbnail": "./civ-zhu-xis-legacy.jpg",
+            "slug": "zhu-xis-legacy",
+            "military": {
+                "barracks": []
+            }
+        }
+    ],
+    "units": {
+        "spearman": {
+            "image": "https://data.aoe4world.com/images/units/spearman-1.png",
+            "level": "Level 1",
+            "civs": ["./civ-english.jpg"],
+            "description": "Light Melee Infantry",
+            "counterDescription": "Infantry best used against mounted units.",
+            "positive": ["+ Anti-cavalry specialist"],
+            "negative": ["- Weak against armored infantry", "- Countered by Archers"],
+            "counter": ["horseman", "lancer", "camelrider", "camellancer", "cataphract", "sipahi", "keshik", "royalknight", "firelancer", "ghaziraider", "king", "knight", "mountedsamurai", "umabannerman", "jeannesrider", "sofa", "warriorscout", "khaganatewarriormonk", "khaganateeliteknight", "gildedknight" , "gildedhorseman", "warriormonk", "imperialguard", "yuanraider"
+        ]
+        }
+    }
 }
-]
