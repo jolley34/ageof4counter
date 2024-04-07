@@ -1,0 +1,66 @@
+[
+    {
+    "title": "English",
+    "thumbnail": "./civ-english.jpg"
+},
+{
+    "title": "French",
+    "thumbnail": "./civ-french.jpg"
+},
+{
+    "title": "Abbasid Dynasty",
+    "thumbnail": "./civ-abbasid-dynasty.jpg"
+},
+{
+    "title": "Byzantines",
+    "thumbnail": "./civ-byzantines.jpg"
+},
+{
+    "title": "Chinese",
+    "thumbnail": "./civ-chinese.jpg"
+},
+{
+    "title": "Delhi Sultanate",
+    "thumbnail": "./civ-delhi-sultanate.jpg"
+},
+{
+    "title": "Holy Roman Empire",
+    "thumbnail": "./civ-holy-roman-empire.jpg"
+},
+{
+    "title": "Japanese",
+    "thumbnail": "./civ-japanese.jpg"
+},
+{
+    "title": "Malians",
+    "thumbnail": "./civ-malians.jpg"
+},
+{
+    "title": "Mongols",
+    "thumbnail": "./civ-mongols.jpg"
+},
+{
+    "title": "Ottomans",
+    "thumbnail": "./civ-ottomans.jpg"
+},
+{
+    "title": "Rus",
+    "thumbnail": "./civ-rus.jpg"
+},
+{
+    "title": "Ayyubids",
+    "thumbnail": "./civ-ayyubids.jpg"
+},
+{
+    "title": "Jeanne d'Arc",
+    "thumbnail": "./civ-jeanne-darc.jpg"
+},
+{
+    "title": "Order of the Dragon",
+    "thumbnail": "./civ-order-of-the-dragon.jpg"
+},
+{
+    "title": "Zhu Xi's Legacy",
+    "thumbnail": "./civ-zhu-xis-legacy.jpg"
+}
+]
