@@ -134,47 +134,47 @@ export const CounterUnits: CounterUnit[] = [
     },
     lancer: {
       name: "Lancer",
-      image: "https://data.aoe4world.com/images/units/lancer-1.png",
+      image: "https://data.aoe4world.com/images/units/lancer-3.png",
     },
     camelrider: {
       name: "Camel Rider",
-      image: "https://data.aoe4world.com/images/units/camelrider-1.png",
+      image: "https://data.aoe4world.com/images/units/camel-rider-3.png",
     },
     horseman: {
       name: "Horse Rider",
-      image: "https://data.aoe4world.com/images/units/horserider-1.png",
+      image: "https://data.aoe4world.com/images/units/horseman-1.png",
     },
     camellancer: {
       name: "Camel Lancer",
-      image: "https://data.aoe4world.com/images/units/camellancer-1.png",
+      image: "https://data.aoe4world.com/images/units/camel-lancer-3.png",
     },
     cataphract: {
-      name: "Camel Lancer",
-      image: "https://data.aoe4world.com/images/units/cataphract-1.png",
+      name: "Cataphract",
+      image: "https://data.aoe4world.com/images/units/cataphract-3.png",
     },
     sipahi: {
       name: "Sipahi",
-      image: "https://data.aoe4world.com/images/units/sipahi-1.png",
+      image: "https://data.aoe4world.com/images/units/sipahi-4.png",
     },
     keshik: {
       name: "Keshik",
-      image: "https://data.aoe4world.com/images/units/keshik-1.png",
+      image: "https://data.aoe4world.com/images/units/keshik-2.png",
     },
     royalknight: {
       name: "Royal Knight",
-      image: "https://data.aoe4world.com/images/units/royalknight-1.png",
+      image: "https://data.aoe4world.com/images/units/royal-knight-2.png",
     },
     firelancer: {
       name: "Fire Lancer",
-      image: "https://data.aoe4world.com/images/units/firelancer-1.png",
+      image: "https://data.aoe4world.com/images/units/firelancer-3.png",
     },
     ghaziraider: {
       name: "Ghaziraider",
-      image: "https://data.aoe4world.com/images/units/ghaziraider-1.png",
+      image: "https://data.aoe4world.com/images/units/ghazi-raider-2.png",
     },
     king: {
       name: "King",
-      image: "https://data.aoe4world.com/images/units/king-1.png",
+      image: "https://data.aoe4world.com/images/units/king-2.png",
     },
     knight: {
       name: "Knight",
@@ -182,65 +182,63 @@ export const CounterUnits: CounterUnit[] = [
     },
     mountedsamurai: {
       name: "Mounted Samurai",
-      image: "https://data.aoe4world.com/images/units/mountedsamurai-1.png",
+      image: "https://data.aoe4world.com/images/units/mounted-samurai-3.png",
     },
     umabannerman: {
       name: "Uma Bannerman",
-      image: "https://data.aoe4world.com/images/units/umabannerman-1.png",
+      image: "https://data.aoe4world.com/images/units/uma-bannerman-2.png",
     },
     jeannesrider: {
       name: "Jeanne's Rider",
-      image: "https://data.aoe4world.com/images/units/jeannesrider-1.png",
+      image: "https://data.aoe4world.com/images/units/jeannes-rider-1.png",
     },
     sofa: {
       name: "Sofa",
-      image: "https://data.aoe4world.com/images/units/sofa-1.png",
+      image: "https://data.aoe4world.com/images/units/sofa-2.png",
     },
     warriorscout: {
       name: "Warrior Scout",
-      image: "https://data.aoe4world.com/images/units/warriorscout-1.png",
+      image: "https://data.aoe4world.com/images/units/warrior-scout-4.png",
     },
     khaganateeliteknight: {
       name: "Khaganate Elite Knight",
-      image:
-        "https://data.aoe4world.com/images/units/khaganateeliteknight-1.png",
+      image: "https://data.aoe4world.com/images/units/knight-1.png",
     },
     khaganatewarriormonk: {
       name: "Khaganate Warrior Monk",
-      image:
-        "https://data.aoe4world.com/images/units/khaganatewarriormonk-1.png",
+      image: "https://data.aoe4world.com/images/units/warrior-monk-1.png",
     },
     gildedknight: {
       name: "Gilded Knight",
-      image: "https://data.aoe4world.com/images/units/gildedknight-1.png",
+      image: "https://data.aoe4world.com/images/units/gilded-knight-1.png",
     },
     gildedhorseman: {
       name: "Gilded Horseman",
-      image: "https://data.aoe4world.com/images/units/gildedhorseman-1.png",
+      image: "https://data.aoe4world.com/images/units/gilded-horseman-1.png",
     },
     warriormonk: {
       name: "Warrior Monk",
-      image: "https://data.aoe4world.com/images/units/warriormonk-1.png",
+      image: "https://data.aoe4world.com/images/units/warrior-monk-1.png",
     },
     imperialguard: {
       name: "Imperial Guard",
-      image: "https://data.aoe4world.com/images/units/imperialguard-1.png",
+      image: "https://data.aoe4world.com/images/units/imperial-guard-1.png",
     },
     yuanraider: {
       name: "Yuan Raider",
-      image: "https://data.aoe4world.com/images/units/yuanraider-1.png",
+      image: "https://data.aoe4world.com/images/units/yuan-raider-1.png",
     },
     warelephant: {
       name: "War Elephant",
-      image: "https://data.aoe4world.com/images/units/warelephant-1.png",
+      image: "https://data.aoe4world.com/images/units/war-elephant-3.png",
     },
     towerelephant: {
       name: "Tower Elephant",
-      image: "https://data.aoe4world.com/images/units/towerelephant-1.png",
+      image: "https://data.aoe4world.com/images/units/tower-elephant-3.png",
     },
     jeannedarcknight: {
       name: "Jeanne Dar'c Knight",
-      image: "https://data.aoe4world.com/images/units/jeannedarcknight-1.png",
+      image: "https://data.aoe4world.com/images/units/jeanne-darc-knight-1.png",
     },
     limitanei: {
       name: "Limitanei",
@@ -252,11 +250,11 @@ export const CounterUnits: CounterUnit[] = [
     },
     gildedspearman: {
       name: "Glided Spearman",
-      image: "https://data.aoe4world.com/images/units/gildedspearman-1.png",
+      image: "https://data.aoe4world.com/images/units/gilded-spearman-1.png",
     },
     crossbowman: {
       name: "Crossbowman",
-      image: "https://data.aoe4world.com/images/units/crossbowman-1.png",
+      image: "https://data.aoe4world.com/images/units/crossbowman-2.png",
     },
     handcannoneer: {
       name: "Hand Cannoneer",
@@ -264,61 +262,62 @@ export const CounterUnits: CounterUnit[] = [
     },
     musofadigunner: {
       name: "Musofadi Gunner",
-      image: "https://data.aoe4world.com/images/units/musofadigunner-1.png",
+      image: "https://data.aoe4world.com/images/units/musofadi-gunner-4.png",
     },
     janissary: {
       name: "Janissary",
-      image: "https://data.aoe4world.com/images/units/janissary-1.png",
+      image: "https://data.aoe4world.com/images/units/janissary-3.png",
     },
     musofadiwarrior: {
       name: "Musofadi Warrior",
-      image: "https://data.aoe4world.com/images/units/musofadiwarrior-1.png",
+      image: "https://data.aoe4world.com/images/units/musofadi-warrior-3.png",
     },
     javelinthrower: {
       name: "Javelin Thrower",
-      image: "https://data.aoe4world.com/images/units/javelinthrower-1.png",
+      image: "https://data.aoe4world.com/images/units/javelin-thrower-2.png",
     },
     streltsy: {
       name: "Streltsy",
-      image: "https://data.aoe4world.com/images/units/streltsy-1.png",
+      image: "https://data.aoe4world.com/images/units/streltsy-4.png",
     },
     palaceguard: {
       name: "Palace Guard",
-      image: "https://data.aoe4world.com/images/units/palaceguard-1.png",
+      image: "https://data.aoe4world.com/images/units/palace-guard-2.png",
     },
     bedouinswordsman: {
       name: "Bedouin Swordsman",
-      image: "https://data.aoe4world.com/images/units/bedouinswordsman-1.png",
+      image: "https://data.aoe4world.com/images/units/bedouin-swordsman-1.png",
     },
     arbalétrier: {
       name: "Arbalétrier",
-      image: "https://data.aoe4world.com/images/units/arbalétrier-1.png",
+      image: "https://data.aoe4world.com/images/units/arbaletrier-3.png",
     },
     onnabugeisha: {
       name: "Onna Bugeisha",
-      image: "https://data.aoe4world.com/images/units/onnabugeisha-1.png",
+      image: "https://data.aoe4world.com/images/units/onna-bugeisha-2.png",
     },
     handcannonashigaru: {
       name: "Hand Cannon Ashigaru",
-      image: "https://data.aoe4world.com/images/units/handcannonashigaru-1.png",
+      image:
+        "https://data.aoe4world.com/images/units/handcannon-ashigaru-4.png",
     },
     ozutsu: {
       name: "Ozutsu",
-      image: "https://data.aoe4world.com/images/units/ozutsu-1.png",
+      image: "https://data.aoe4world.com/images/units/ozutsu-4.png",
     },
     dragonhandcannoneer: {
       name: "Dragon Hand Cannoneer",
       image:
-        "https://data.aoe4world.com/images/units/dragonhandcannoneer-1.png",
+        "https://data.aoe4world.com/images/units/dragon-handcannoneer-1.png",
     },
     gildedhandcannoneer: {
       name: "Gilded Hand Cannoneer",
       image:
-        "https://data.aoe4world.com/images/units/gildedhandcannoneer-1.png",
+        "https://data.aoe4world.com/images/units/gilded-handcannoneer-4.png",
     },
     gildedcrossbowman: {
       name: "Gilded Crossbowman",
-      image: "https://data.aoe4world.com/images/units/gildedcrossbowman-1.png",
+      image: "https://data.aoe4world.com/images/units/gilded-crossbowman-1.png",
     },
     militia: {
       name: "Militia",
@@ -338,23 +337,23 @@ export const CounterUnits: CounterUnit[] = [
     },
     varangianguard: {
       name: "Varangian Guard",
-      image: "https://data.aoe4world.com/images/units/varangianguard-1.png",
+      image: "https://data.aoe4world.com/images/units/varangian-guard-3.png",
     },
     wynguardranger: {
       name: "Wynguard Ranger",
-      image: "https://data.aoe4world.com/images/units/wynguardranger-1.png",
+      image: "https://data.aoe4world.com/images/units/wynguard-ranger-4.png",
     },
     wynguardfootman: {
       name: "Wynguard Footman",
-      image: "https://data.aoe4world.com/images/units/wynguardfootman-1.png",
+      image: "https://data.aoe4world.com/images/units/wynguard-footman-4.png",
     },
     landsknecht: {
       name: "Landsknecht",
-      image: "https://data.aoe4world.com/images/units/landsknecht-1.png",
+      image: "https://data.aoe4world.com/images/units/landsknecht-4.png",
     },
     yumiashigaru: {
-      name: "Yumiashigaru",
-      image: "https://data.aoe4world.com/images/units/yumiashigaru-1.png",
+      name: "Yumi Ashigaru",
+      image: "https://data.aoe4world.com/images/units/yumi-ashigaru-3.png",
     },
     samurai: {
       name: "Samurai",
@@ -362,29 +361,29 @@ export const CounterUnits: CounterUnit[] = [
     },
     yumibannerman: {
       name: "Yumi Bannerman",
-      image: "https://data.aoe4world.com/images/units/yumibannerman-1.png",
+      image: "https://data.aoe4world.com/images/units/yumi-bannerman-2.png",
     },
     katanabannerman: {
       name: "Katana Bannerman",
-      image: "https://data.aoe4world.com/images/units/katanabannerman-1.png",
+      image: "https://data.aoe4world.com/images/units/katana-bannerman-2.png",
     },
     jeannedarchunter: {
       name: "Jeanne dar'c Hunter",
-      image: "https://data.aoe4world.com/images/units/jeannedarchunter-1.png",
+      image: "https://data.aoe4world.com/images/units/jeanne-darc-hunter-1.png",
     },
     jeannedarcwomanatarms: {
       name: "Jeanne dar'c Woman at Arms",
       image:
-        "https://data.aoe4world.com/images/units/jeannedarcwomanatarms-1.png",
+        "https://data.aoe4world.com/images/units/jeanne-darc-woman-at-arms-1.png",
     },
     jeannedarcmountedarcher: {
       name: "Jeanne dar'c Mounted Archer",
       image:
-        "https://data.aoe4world.com/images/units/jeannedarcmountedarcher-1.png",
+        "https://data.aoe4world.com/images/units/jeanne-darc-mounted-archer-1.png",
     },
     jeanneschampion: {
       name: "Jeanne's Champion",
-      image: "https://data.aoe4world.com/images/units/jeanneschampion-1.png",
+      image: "https://data.aoe4world.com/images/units/jeannes-champion-1.png",
     },
     mangudai: {
       name: "Mangudai",
@@ -392,36 +391,35 @@ export const CounterUnits: CounterUnit[] = [
     },
     khaganateelitehorsearcher: {
       name: "Khaganate Elite Horse Archer",
-      image:
-        "https://data.aoe4world.com/images/units/khaganateelitehorsearcher-1.png",
+      image: "https://data.aoe4world.com/images/units/horse-archer-1.png",
     },
     gildedlandsknecht: {
       name: "Gilded Landsknecht",
-      image: "https://data.aoe4world.com/images/units/gildedlandsknecht-1.png",
+      image: "https://data.aoe4world.com/images/units/gilded-landsknecht-1.png",
     },
     gildedarcher: {
       name: "Gilded Archer",
-      image: "https://data.aoe4world.com/images/units/gildedarcher-1.png",
+      image: "https://data.aoe4world.com/images/units/gilded-archer-1.png",
     },
     gildedmanatarms: {
       name: "Gilded Man at Arms",
-      image: "https://data.aoe4world.com/images/units/gildedmanatarms-1.png",
+      image: "https://data.aoe4world.com/images/units/gilded-man-at-arms-1.png",
     },
     zhugenu: {
       name: "Zhuge Nu",
-      image: "https://data.aoe4world.com/images/units/zhugenu-1.png",
+      image: "https://data.aoe4world.com/images/units/zhuge-nu-1.png",
     },
     bedouinskirmisher: {
       name: "Bedouin Skirmisher",
-      image: "https://data.aoe4world.com/images/units/bedouinskirmisher-1.png",
+      image: "https://data.aoe4world.com/images/units/bedouin-skirmisher-1.png",
     },
     camelarcher: {
       name: "Camel Archer",
-      image: "https://data.aoe4world.com/images/units/camelarcher-1.png",
+      image: "https://data.aoe4world.com/images/units/camel-archer-2.png",
     },
     desertraider: {
       name: "Desert Raider",
-      image: "https://data.aoe4world.com/images/units/desertraider-1.png",
+      image: "https://data.aoe4world.com/images/units/desert-raider-1.png",
     },
   },
 ];
