@@ -1,7 +1,9 @@
-"use client";
+/* "use client";
 
 import { device } from "@/app/breakpoints";
+import { useCivs } from "@/app/context/civContext";
 import styled from "styled-components";
+import data from "../data/civils.json";
 
 const Wrapper = styled.section`
   margin: 2rem 4rem 2rem 4rem;
@@ -56,15 +58,18 @@ const GridTitle = styled.h1`
   font-weight: 700;
 `;
 
-export default function CivPage() {
+export default function CivPage({ slug }) {
+  const { units } = useCivs();
+  const civ = data.civs.find((civ) => civ.slug === slug);
+
   return (
     <>
       <Wrapper>
         <GridContainer>
           <GridItem key={index}>
-            <GridTitle>{item.title}</GridTitle>
+            <GridTitle>{}</GridTitle>
             <ImageCard>
-              <img src={item.thumbnail} alt={item.title} />
+              <img src={} alt={} />
             </ImageCard>
           </GridItem>
         </GridContainer>
@@ -72,3 +77,4 @@ export default function CivPage() {
     </>
   );
 }
+ */

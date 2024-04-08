@@ -1,7 +1,8 @@
 "use client";
+import Link from "next/link";
 import styled from "styled-components";
 import { device } from "../breakpoints";
-import data from "../data/civils.json";
+import { useCivs } from "../context/civContext";
 
 const Wrapper = styled.section`
   margin: 2rem 4rem 2rem 4rem;
@@ -59,15 +60,19 @@ const GridTitle = styled.h1`
 `;
 
 export default function GridComponent() {
+  const { civs } = useCivs();
+
   return (
     <Wrapper>
       <GridContainer>
-        {data.civs.map((civ, index) => (
+        {civs.map((civ, index) => (
           <GridItem key={index}>
             <GridTitle>{civ.title}</GridTitle>
-            <ImageCard>
-              <img src={civ.thumbnail} alt={civ.title} />
-            </ImageCard>
+            <Link href={`/civ/${civ.slug}`}>
+              <ImageCard>
+                <img src={civ.thumbnail} alt={civ.title} />
+              </ImageCard>
+            </Link>
           </GridItem>
         ))}
       </GridContainer>
