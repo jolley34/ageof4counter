@@ -33,7 +33,7 @@ const GridContainer = styled.div`
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  z-index: 10;
+  z-index: 50;
 `;
 
 const ImageCard = styled.div`
@@ -129,33 +129,59 @@ export default function CivPage() {
         weakcounter,
         nocounter,
       } = unit[unitName];
+
       return (
         <div>
-          <SubTitle>Hard Counter:</SubTitle>
-          <>{renderCounterList(hardcounter)}</>
-          <SubTitle>Better Counter:</SubTitle>
-          <>{renderCounterList(bettercounter)}</>
-          <SubTitle>Even Counter:</SubTitle>
-          <>{renderCounterList(evencounter)}</>
-          <SubTitle>Weak Counter:</SubTitle>
-          <>{renderCounterList(weakcounter)}</>
-          <SubTitle>No Counter:</SubTitle>
-          <>{renderCounterList(nocounter)}</>
+          {hardcounter && hardcounter.counters.length > 0 && (
+            <>
+              <SubTitle>Hard Counter:</SubTitle>
+              {renderCounterList(hardcounter)}
+            </>
+          )}
+          {bettercounter && bettercounter.counters.length > 0 && (
+            <>
+              <SubTitle>Better Trade:</SubTitle>
+              {renderCounterList(bettercounter)}
+            </>
+          )}
+          {evencounter && evencounter.counters.length > 0 && (
+            <>
+              <SubTitle>Even Counter:</SubTitle>
+              {renderCounterList(evencounter)}
+            </>
+          )}
+          {weakcounter && weakcounter.counters.length > 0 && (
+            <>
+              <SubTitle>Weak Against:</SubTitle>
+              {renderCounterList(weakcounter)}
+            </>
+          )}
+          {nocounter && nocounter.counters.length > 0 && (
+            <>
+              <SubTitle>Counter By:</SubTitle>
+              {renderCounterList(nocounter)}
+            </>
+          )}
         </div>
       );
     }
     return null;
   };
 
+  // Uppdatera renderCounterList för att tillämpa färgen för evencounter
   const renderCounterList = (counter: Counter) => {
     return (
       <GridContainer>
         {counter.counters.map((unitName, index) => {
           const counterUnit = CounterUnits[0][unitName as keyof CounterTypes];
+          // Hämta färgen från counterlevel eller använd standardvärde "yellow"
+          const color = counter.counterlevel;
           return (
             <GridItem key={index}>
               {counterUnit && (
-                <ImageCard>
+                <ImageCard
+                  style={{ background: `${color}`, borderRadius: "10px" }}
+                >
                   <img src={counterUnit.image} alt={counterUnit.name} />
                 </ImageCard>
               )}
