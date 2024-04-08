@@ -40,6 +40,310 @@ export interface Unit {
   manatarms: UnitDetails;
 }
 
+export const CounterUnits: CounterUnit[] = [
+  {
+    spearman: {
+      name: "Spearman",
+      image: "https://data.aoe4world.com/images/units/spearman-1.png",
+    },
+    manatarms: {
+      name: "Man at Arms",
+      image: "https://data.aoe4world.com/images/units/man-at-arms-1.png",
+    },
+    lancer: {
+      name: "Lancer",
+      image: "https://data.aoe4world.com/images/units/lancer-1.png",
+    },
+    camelrider: {
+      name: "Camel Rider",
+      image: "https://data.aoe4world.com/images/units/camelrider-1.png",
+    },
+    horseman: {
+      name: "Horse Rider",
+      image: "https://data.aoe4world.com/images/units/horserider-1.png",
+    },
+    camellancer: {
+      name: "Camel Lancer",
+      image: "https://data.aoe4world.com/images/units/camellancer-1.png",
+    },
+    cataphract: {
+      name: "Camel Lancer",
+      image: "https://data.aoe4world.com/images/units/cataphract-1.png",
+    },
+    sipahi: {
+      name: "Sipahi",
+      image: "https://data.aoe4world.com/images/units/sipahi-1.png",
+    },
+    keshik: {
+      name: "Keshik",
+      image: "https://data.aoe4world.com/images/units/keshik-1.png",
+    },
+    royalknight: {
+      name: "Royal Knight",
+      image: "https://data.aoe4world.com/images/units/royalknight-1.png",
+    },
+    firelancer: {
+      name: "Fire Lancer",
+      image: "https://data.aoe4world.com/images/units/firelancer-1.png",
+    },
+    ghaziraider: {
+      name: "Ghaziraider",
+      image: "https://data.aoe4world.com/images/units/ghaziraider-1.png",
+    },
+    king: {
+      name: "King",
+      image: "https://data.aoe4world.com/images/units/king-1.png",
+    },
+    knight: {
+      name: "Knight",
+      image: "https://data.aoe4world.com/images/units/knight-1.png",
+    },
+    mountedsamurai: {
+      name: "Mounted Samurai",
+      image: "https://data.aoe4world.com/images/units/mountedsamurai-1.png",
+    },
+    umabannerman: {
+      name: "Uma Bannerman",
+      image: "https://data.aoe4world.com/images/units/umabannerman-1.png",
+    },
+    jeannesrider: {
+      name: "Jeanne's Rider",
+      image: "https://data.aoe4world.com/images/units/jeannesrider-1.png",
+    },
+    sofa: {
+      name: "Sofa",
+      image: "https://data.aoe4world.com/images/units/sofa-1.png",
+    },
+    warriorscout: {
+      name: "Warrior Scout",
+      image: "https://data.aoe4world.com/images/units/warriorscout-1.png",
+    },
+    khaganateeliteknight: {
+      name: "Khaganate Elite Knight",
+      image:
+        "https://data.aoe4world.com/images/units/khaganateeliteknight-1.png",
+    },
+    khaganatewarriormonk: {
+      name: "Khaganate Warrior Monk",
+      image:
+        "https://data.aoe4world.com/images/units/khaganatewarriormonk-1.png",
+    },
+    gildedknight: {
+      name: "Gilded Knight",
+      image: "https://data.aoe4world.com/images/units/gildedknight-1.png",
+    },
+    gildedhorseman: {
+      name: "Gilded Horseman",
+      image: "https://data.aoe4world.com/images/units/gildedhorseman-1.png",
+    },
+    warriormonk: {
+      name: "Warrior Monk",
+      image: "https://data.aoe4world.com/images/units/warriormonk-1.png",
+    },
+    imperialguard: {
+      name: "Imperial Guard",
+      image: "https://data.aoe4world.com/images/units/imperialguard-1.png",
+    },
+    yuanraider: {
+      name: "Yuan Raider",
+      image: "https://data.aoe4world.com/images/units/yuanraider-1.png",
+    },
+    warelephant: {
+      name: "War Elephant",
+      image: "https://data.aoe4world.com/images/units/warelephant-1.png",
+    },
+    towerelephant: {
+      name: "Tower Elephant",
+      image: "https://data.aoe4world.com/images/units/towerelephant-1.png",
+    },
+    jeannedarcknight: {
+      name: "Jeanne Dar'c Knight",
+      image: "https://data.aoe4world.com/images/units/jeannedarcknight-1.png",
+    },
+    limitanei: {
+      name: "Limitanei",
+      image: "https://data.aoe4world.com/images/units/limitanei-1.png",
+    },
+    donso: {
+      name: "Donso",
+      image: "https://data.aoe4world.com/images/units/donso-1.png",
+    },
+    gildedspearman: {
+      name: "Glided Spearman",
+      image: "https://data.aoe4world.com/images/units/gildedspearman-1.png",
+    },
+    crossbowman: {
+      name: "Crossbowman",
+      image: "https://data.aoe4world.com/images/units/crossbowman-1.png",
+    },
+    handcannoneer: {
+      name: "Hand Cannoneer",
+      image: "https://data.aoe4world.com/images/units/handcannoneer-1.png",
+    },
+    musofadigunner: {
+      name: "Musofadi Gunner",
+      image: "https://data.aoe4world.com/images/units/musofadigunner-1.png",
+    },
+    janissary: {
+      name: "Janissary",
+      image: "https://data.aoe4world.com/images/units/janissary-1.png",
+    },
+    musofadiwarrior: {
+      name: "Musofadi Warrior",
+      image: "https://data.aoe4world.com/images/units/musofadiwarrior-1.png",
+    },
+    javelinthrower: {
+      name: "Javelin Thrower",
+      image: "https://data.aoe4world.com/images/units/javelinthrower-1.png",
+    },
+    streltsy: {
+      name: "Streltsy",
+      image: "https://data.aoe4world.com/images/units/streltsy-1.png",
+    },
+    palaceguard: {
+      name: "Palace Guard",
+      image: "https://data.aoe4world.com/images/units/palaceguard-1.png",
+    },
+    bedouinswordsman: {
+      name: "Bedouin Swordsman",
+      image: "https://data.aoe4world.com/images/units/bedouinswordsman-1.png",
+    },
+    arbalétrier: {
+      name: "Arbalétrier",
+      image: "https://data.aoe4world.com/images/units/arbalétrier-1.png",
+    },
+    onnabugeisha: {
+      name: "Onna Bugeisha",
+      image: "https://data.aoe4world.com/images/units/onnabugeisha-1.png",
+    },
+    handcannonashigaru: {
+      name: "Hand Cannon Ashigaru",
+      image: "https://data.aoe4world.com/images/units/handcannonashigaru-1.png",
+    },
+    ozutsu: {
+      name: "Ozutsu",
+      image: "https://data.aoe4world.com/images/units/ozutsu-1.png",
+    },
+    dragonhandcannoneer: {
+      name: "Dragon Hand Cannoneer",
+      image:
+        "https://data.aoe4world.com/images/units/dragonhandcannoneer-1.png",
+    },
+    gildedhandcannoneer: {
+      name: "Gilded Hand Cannoneer",
+      image:
+        "https://data.aoe4world.com/images/units/gildedhandcannoneer-1.png",
+    },
+    gildedcrossbowman: {
+      name: "Gilded Crossbowman",
+      image: "https://data.aoe4world.com/images/units/gildedcrossbowman-1.png",
+    },
+    militia: {
+      name: "Militia",
+      image: "https://data.aoe4world.com/images/units/militia-1.png",
+    },
+    grenadier: {
+      name: "Grenadier",
+      image: "https://data.aoe4world.com/images/units/grenadier-1.png",
+    },
+    archer: {
+      name: "Archer",
+      image: "https://data.aoe4world.com/images/units/archer-1.png",
+    },
+    ghulam: {
+      name: "Ghulam",
+      image: "https://data.aoe4world.com/images/units/ghulam-1.png",
+    },
+    varangianguard: {
+      name: "Varangian Guard",
+      image: "https://data.aoe4world.com/images/units/varangianguard-1.png",
+    },
+    wynguardranger: {
+      name: "Wynguard Ranger",
+      image: "https://data.aoe4world.com/images/units/wynguardranger-1.png",
+    },
+    wynguardfootman: {
+      name: "Wynguard Footman",
+      image: "https://data.aoe4world.com/images/units/wynguardfootman-1.png",
+    },
+    landsknecht: {
+      name: "Landsknecht",
+      image: "https://data.aoe4world.com/images/units/landsknecht-1.png",
+    },
+    yumiashigaru: {
+      name: "Yumiashigaru",
+      image: "https://data.aoe4world.com/images/units/yumiashigaru-1.png",
+    },
+    samurai: {
+      name: "Samurai",
+      image: "https://data.aoe4world.com/images/units/samurai-1.png",
+    },
+    yumibannerman: {
+      name: "Yumi Bannerman",
+      image: "https://data.aoe4world.com/images/units/yumibannerman-1.png",
+    },
+    katanabannerman: {
+      name: "Katana Bannerman",
+      image: "https://data.aoe4world.com/images/units/katanabannerman-1.png",
+    },
+    jeannedarchunter: {
+      name: "Jeanne dar'c Hunter",
+      image: "https://data.aoe4world.com/images/units/jeannedarchunter-1.png",
+    },
+    jeannedarcwomanatarms: {
+      name: "Jeanne dar'c Woman at Arms",
+      image:
+        "https://data.aoe4world.com/images/units/jeannedarcwomanatarms-1.png",
+    },
+    jeannedarcmountedarcher: {
+      name: "Jeanne dar'c Mounted Archer",
+      image:
+        "https://data.aoe4world.com/images/units/jeannedarcmountedarcher-1.png",
+    },
+    jeanneschampion: {
+      name: "Jeanne's Champion",
+      image: "https://data.aoe4world.com/images/units/jeanneschampion-1.png",
+    },
+    mangudai: {
+      name: "Mangudai",
+      image: "https://data.aoe4world.com/images/units/mangudai-1.png",
+    },
+    khaganateelitehorsearcher: {
+      name: "Khaganate Elite Horse Archer",
+      image:
+        "https://data.aoe4world.com/images/units/khaganateelitehorsearcher-1.png",
+    },
+    gildedlandsknecht: {
+      name: "Gilded Landsknecht",
+      image: "https://data.aoe4world.com/images/units/gildedlandsknecht-1.png",
+    },
+    gildedarcher: {
+      name: "Gilded Archer",
+      image: "https://data.aoe4world.com/images/units/gildedarcher-1.png",
+    },
+    gildedmanatarms: {
+      name: "Gilded Man at Arms",
+      image: "https://data.aoe4world.com/images/units/gildedmanatarms-1.png",
+    },
+    zhugenu: {
+      name: "Zhuge Nu",
+      image: "https://data.aoe4world.com/images/units/zhugenu-1.png",
+    },
+    bedouinskirmisher: {
+      name: "Bedouin Skirmisher",
+      image: "https://data.aoe4world.com/images/units/bedouinskirmisher-1.png",
+    },
+    camelarcher: {
+      name: "Camel Archer",
+      image: "https://data.aoe4world.com/images/units/camelarcher-1.png",
+    },
+    desertraider: {
+      name: "Desert Raider",
+      image: "https://data.aoe4world.com/images/units/desertraider-1.png",
+    },
+  },
+];
+
 export const units: Unit[] = [
   {
     spearman: {
@@ -81,7 +385,6 @@ export const units: Unit[] = [
           "warelephant",
           "towerelephant",
           "jeannedarcknight",
-          "imperialguard",
         ],
       },
       bettercounter: {
