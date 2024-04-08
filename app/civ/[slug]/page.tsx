@@ -10,17 +10,19 @@ const Wrapper = styled.section`
 `;
 
 const LeftSection = styled.section`
+  display: flex;
+  flex-direction: column;
   padding: 4rem;
+  gap: 2rem;
 `;
 
-const RightSection = styled.section`
-  position: relative;
-`;
+const RightSection = styled.section``;
 
 const GridContainer = styled.div`
+  z-index: 100;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 `;
 
 const ImageCard = styled.div`
@@ -38,15 +40,23 @@ const ImageCard = styled.div`
   }
 `;
 
-const FlagImage = styled(ImageCard)`
+const FlagImage = styled.div`
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+
   img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.1;
   }
 `;
 
 const BackgroundImage = styled.div`
   filter: grayscale(1);
+  opacity: 0.1;
   img {
     width: 100%;
     height: 100vh;
@@ -72,6 +82,11 @@ const Spacer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+const GridWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 `;
 
@@ -86,23 +101,25 @@ export default function CivPage() {
 
   return (
     <Wrapper>
+      <FlagImage>
+        <img src={civ.thumbnail} alt={civ.title} />
+      </FlagImage>
       <LeftSection>
         <Spacer>
           <GridTitle>{civ.title}</GridTitle>
-          <FlagImage>
-            <img src={civ.thumbnail} alt={civ.title} />
-          </FlagImage>
         </Spacer>
-        <SubTitle>{civ.military.barracks.name}</SubTitle>
-        <GridContainer>
-          {civ.military.barracks.unit.map((unitImage, index) => (
-            <GridItem key={index}>
-              <ImageCard>
-                <img src={unitImage} alt={civ.military.barracks.name} />
-              </ImageCard>
-            </GridItem>
-          ))}
-        </GridContainer>
+        <GridWrapper>
+          <SubTitle>{civ.military.barracks.name}</SubTitle>
+          <GridContainer>
+            {civ.military.barracks.unit.map((unitImage, index) => (
+              <GridItem key={index}>
+                <ImageCard>
+                  <img src={unitImage} alt={civ.military.barracks.name} />
+                </ImageCard>
+              </GridItem>
+            ))}
+          </GridContainer>
+        </GridWrapper>
       </LeftSection>
       <RightSection>
         <BackgroundImage>

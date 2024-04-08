@@ -22,6 +22,7 @@ const HeaderWrapper = styled.div`
   position: sticky;
   background-color: var(--subcolor);
   border-bottom: 1px solid #3b3b3b;
+  z-index: 1000;
 `;
 
 const NavbarWrapper = styled.ul`
