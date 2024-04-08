@@ -132,15 +132,15 @@ export default function CivPage() {
       return (
         <div>
           <SubTitle>Hard Counter:</SubTitle>
-          <ul>{renderCounterList(hardcounter)}</ul>
+          <>{renderCounterList(hardcounter)}</>
           <SubTitle>Better Counter:</SubTitle>
-          <ul>{renderCounterList(bettercounter)}</ul>
+          <>{renderCounterList(bettercounter)}</>
           <SubTitle>Even Counter:</SubTitle>
-          <ul>{renderCounterList(evencounter)}</ul>
+          <>{renderCounterList(evencounter)}</>
           <SubTitle>Weak Counter:</SubTitle>
-          <ul>{renderCounterList(weakcounter)}</ul>
+          <>{renderCounterList(weakcounter)}</>
           <SubTitle>No Counter:</SubTitle>
-          <ul>{renderCounterList(nocounter)}</ul>
+          <>{renderCounterList(nocounter)}</>
         </div>
       );
     }
@@ -149,18 +149,20 @@ export default function CivPage() {
 
   const renderCounterList = (counter: Counter) => {
     return (
-      <ul>
+      <GridContainer>
         {counter.counters.map((unitName, index) => {
           const counterUnit = CounterUnits[0][unitName as keyof CounterTypes];
           return (
-            <li key={index}>
+            <GridItem key={index}>
               {counterUnit && (
-                <img src={counterUnit.image} alt={counterUnit.name} />
+                <ImageCard>
+                  <img src={counterUnit.image} alt={counterUnit.name} />
+                </ImageCard>
               )}
-            </li>
+            </GridItem>
           );
         })}
-      </ul>
+      </GridContainer>
     );
   };
 
