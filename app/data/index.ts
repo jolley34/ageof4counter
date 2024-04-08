@@ -19,6 +19,88 @@ export interface Counter {
   counters: string[];
 }
 
+export interface CounterTypes {
+  name: string;
+  image: string;
+}
+
+export interface CounterUnit {
+  spearman: CounterTypes;
+  manatarms: CounterTypes;
+  lancer: CounterTypes;
+  camelrider: CounterTypes;
+  horseman: CounterTypes;
+  camellancer: CounterTypes;
+  cataphract: CounterTypes;
+  sipahi: CounterTypes;
+  keshik: CounterTypes;
+  royalknight: CounterTypes;
+  firelancer: CounterTypes;
+  ghaziraider: CounterTypes;
+  king: CounterTypes;
+  knight: CounterTypes;
+  mountedsamurai: CounterTypes;
+  umabannerman: CounterTypes;
+  jeannesrider: CounterTypes;
+  sofa: CounterTypes;
+  warriorscout: CounterTypes;
+  khaganateeliteknight: CounterTypes;
+  khaganatewarriormonk: CounterTypes;
+  gildedknight: CounterTypes;
+  gildedhorseman: CounterTypes;
+  warriormonk: CounterTypes;
+  imperialguard: CounterTypes;
+  yuanraider: CounterTypes;
+  warelephant: CounterTypes;
+  towerelephant: CounterTypes;
+  jeannedarcknight: CounterTypes;
+  limitanei: CounterTypes;
+  donso: CounterTypes;
+  gildedspearman: CounterTypes;
+  crossbowman: CounterTypes;
+  handcannoneer: CounterTypes;
+  musofadigunner: CounterTypes;
+  janissary: CounterTypes;
+  musofadiwarrior: CounterTypes;
+  javelinthrower: CounterTypes;
+  streltsy: CounterTypes;
+  palaceguard: CounterTypes;
+  bedouinswordsman: CounterTypes;
+  arbalétrier: CounterTypes;
+  onnabugeisha: CounterTypes;
+  handcannonashigaru: CounterTypes;
+  ozutsu: CounterTypes;
+  dragonhandcannoneer: CounterTypes;
+  gildedhandcannoneer: CounterTypes;
+  gildedcrossbowman: CounterTypes;
+  militia: CounterTypes;
+  grenadier: CounterTypes;
+  archer: CounterTypes;
+  ghulam: CounterTypes;
+  varangianguard: CounterTypes;
+  wynguardranger: CounterTypes;
+  wynguardfootman: CounterTypes;
+  landsknecht: CounterTypes;
+  yumiashigaru: CounterTypes;
+  samurai: CounterTypes;
+  yumibannerman: CounterTypes;
+  katanabannerman: CounterTypes;
+  jeannedarchunter: CounterTypes;
+  jeannedarcwomanatarms: CounterTypes;
+  jeannedarcmountedarcher: CounterTypes;
+  jeanneschampion: CounterTypes;
+  mangudai: CounterTypes;
+  khaganateelitehorsearcher: CounterTypes;
+  gildedlandsknecht: CounterTypes;
+  gildedarcher: CounterTypes;
+  gildedmanatarms: CounterTypes;
+  zhugenu: CounterTypes;
+  bedouinskirmisher: CounterTypes;
+  camelarcher: CounterTypes;
+  desertraider: CounterTypes;
+  [key: string]: any;
+}
+
 export interface UnitDetails {
   name: string;
   image: string;
@@ -448,6 +530,7 @@ export const units: Unit[] = [
         ],
       },
     },
+
     manatarms: {
       name: "Man-At-Arms",
       image: "https://data.aoe4world.com/images/units/man-at-arms-1.png",

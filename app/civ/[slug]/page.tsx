@@ -3,7 +3,15 @@
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import styled from "styled-components";
-import { Civ, Counter, Unit, civs, units } from "../../data";
+import {
+  Civ,
+  Counter,
+  CounterTypes,
+  CounterUnits,
+  Unit,
+  civs,
+  units,
+} from "../../data";
 
 const Wrapper = styled.section`
   display: grid;
@@ -140,9 +148,20 @@ export default function CivPage() {
   };
 
   const renderCounterList = (counter: Counter) => {
-    return counter.counters.map((unitName, index) => (
-      <li key={index}>{unitName}</li>
-    ));
+    return (
+      <ul>
+        {counter.counters.map((unitName, index) => {
+          const counterUnit = CounterUnits[0][unitName as keyof CounterTypes];
+          return (
+            <li key={index}>
+              {counterUnit && (
+                <img src={counterUnit.image} alt={counterUnit.name} />
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    );
   };
 
   return (
