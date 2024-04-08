@@ -1,8 +1,9 @@
 "use client";
 
 import { useParams } from "next/navigation";
+import { useState } from "react";
 import styled from "styled-components";
-import { Civ, civs } from "../../data";
+import { Civ, Counter, Unit, civs, units } from "../../data";
 
 const Wrapper = styled.section`
   display: grid;
@@ -16,13 +17,15 @@ const LeftSection = styled.section`
   gap: 2rem;
 `;
 
-const RightSection = styled.section``;
+const RightSection = styled.section`
+  padding: 4rem;
+`;
 
 const GridContainer = styled.div`
-  z-index: 100;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
+  z-index: 10;
 `;
 
 const ImageCard = styled.div`
@@ -55,6 +58,7 @@ const FlagImage = styled.div`
 `;
 
 const BackgroundImage = styled.div`
+  position: absolute;
   filter: grayscale(1);
   opacity: 0.1;
   img {
@@ -99,6 +103,48 @@ export default function CivPage() {
     return <p>Civilisation not found</p>;
   }
 
+  const unitNames = Object.keys(units[0]);
+
+  const [selectedUnit, setSelectedUnit] = useState<keyof Unit | null>(null);
+
+  const renderCounters = (unitName: keyof Unit) => {
+    if (typeof unitName !== "string") {
+      throw new Error("unitName must be a string");
+    }
+
+    const unit = units.find((unit) => unit[unitName]);
+    if (unit) {
+      const {
+        hardcounter,
+        bettercounter,
+        evencounter,
+        weakcounter,
+        nocounter,
+      } = unit[unitName];
+      return (
+        <div>
+          <SubTitle>Hard Counter:</SubTitle>
+          <ul>{renderCounterList(hardcounter)}</ul>
+          <SubTitle>Better Counter:</SubTitle>
+          <ul>{renderCounterList(bettercounter)}</ul>
+          <SubTitle>Even Counter:</SubTitle>
+          <ul>{renderCounterList(evencounter)}</ul>
+          <SubTitle>Weak Counter:</SubTitle>
+          <ul>{renderCounterList(weakcounter)}</ul>
+          <SubTitle>No Counter:</SubTitle>
+          <ul>{renderCounterList(nocounter)}</ul>
+        </div>
+      );
+    }
+    return null;
+  };
+
+  const renderCounterList = (counter: Counter) => {
+    return counter.counters.map((unitName, index) => (
+      <li key={index}>{unitName}</li>
+    ));
+  };
+
   return (
     <Wrapper>
       <FlagImage>
@@ -113,7 +159,11 @@ export default function CivPage() {
           <GridContainer>
             {civ.military.barracks.unit.map((unitImage, index) => (
               <GridItem key={index}>
-                <ImageCard>
+                <ImageCard
+                  onClick={() =>
+                    setSelectedUnit(unitNames[index] as keyof Unit)
+                  }
+                >
                   <img src={unitImage} alt={civ.military.barracks.name} />
                 </ImageCard>
               </GridItem>
@@ -122,10 +172,11 @@ export default function CivPage() {
         </GridWrapper>
       </LeftSection>
       <RightSection>
-        <BackgroundImage>
-          <img src="https://www.ageofempires.com/wp-content/uploads/2021/06/bg-age4-civ-eng-splash-right-desk.png" />
-        </BackgroundImage>
+        {selectedUnit && renderCounters(selectedUnit)}
       </RightSection>
+      <BackgroundImage>
+        <img src="https://www.ageofempires.com/wp-content/uploads/2021/06/bg-age4-civ-eng-splash-right-desk.png" />
+      </BackgroundImage>
     </Wrapper>
   );
 }
