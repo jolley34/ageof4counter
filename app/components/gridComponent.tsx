@@ -2,7 +2,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { device } from "../breakpoints";
-import { useCivs } from "../context/civContext";
+import { civs } from "../data";
 
 const Wrapper = styled.section`
   margin: 2rem 4rem 2rem 4rem;
@@ -60,8 +60,6 @@ const GridTitle = styled.h1`
 `;
 
 export default function GridComponent() {
-  const { civs } = useCivs();
-
   return (
     <Wrapper>
       <GridContainer>

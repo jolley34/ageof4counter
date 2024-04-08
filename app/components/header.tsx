@@ -1,4 +1,6 @@
 "use client";
+
+// Header.js
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -14,7 +16,7 @@ const LogoSub = styled(Logo)`
 `;
 
 const HeaderWrapper = styled.div`
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 1rem 4rem;
   width: 100%;
   top: 0;
   position: sticky;
@@ -53,27 +55,25 @@ const SpaceBetween = styled.div`
 
 export default function Header() {
   return (
-    <>
-      <HeaderWrapper>
-        <SpaceBetween>
-          <Spacer>
-            <Flex>
-              <Logo>Age Of Empire IV</Logo>
-              <LogoSub>UNIT COUNTER</LogoSub>
-            </Flex>
-            <NavbarWrapper>
-              <Link href="/">
-                <NavbarItem>Home</NavbarItem>
-              </Link>
-              <NavbarItem>All Units</NavbarItem>
-            </NavbarWrapper>
-          </Spacer>
+    <HeaderWrapper>
+      <SpaceBetween>
+        <Spacer>
+          <Flex>
+            <Logo>Age Of Empire IV</Logo>
+            <LogoSub>UNIT COUNTER</LogoSub>
+          </Flex>
           <NavbarWrapper>
-            <NavbarItem>Search Unit</NavbarItem>
-            <NavbarItem>Settings</NavbarItem>
+            <Link href="/">
+              <NavbarItem>Home</NavbarItem>
+            </Link>
+            <NavbarItem>All Units</NavbarItem>
           </NavbarWrapper>
-        </SpaceBetween>
-      </HeaderWrapper>
-    </>
+        </Spacer>
+        <NavbarWrapper>
+          <NavbarItem>Search Unit</NavbarItem>
+          <NavbarItem>Settings</NavbarItem>
+        </NavbarWrapper>
+      </SpaceBetween>
+    </HeaderWrapper>
   );
 }

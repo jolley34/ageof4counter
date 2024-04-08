@@ -1,11 +1,11 @@
 "use client";
 
+// Footer.js
 import styled from "styled-components";
 
-const Wrapper = styled.section`
+const Wrapper = styled.footer`
   width: 100%;
-  padding: 4rem 4rem 4rem 4rem;
-  bottom: 0;
+  padding: 4rem;
   background-color: var(--subcolor);
   display: flex;
   justify-content: center;
@@ -17,10 +17,8 @@ const Paragrafy = styled.p`
 
 export default function Footer() {
   return (
-    <>
-      <Wrapper>
-        <Paragrafy>Age of Empire IV Unit Counter - 2024</Paragrafy>
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Paragrafy>Age of Empire IV Unit Counter - 2024</Paragrafy>
+    </Wrapper>
   );
 }

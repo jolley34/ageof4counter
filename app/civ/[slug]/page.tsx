@@ -1,44 +1,33 @@
-/* "use client";
+"use client";
 
-import { device } from "@/app/breakpoints";
-import { useCivs } from "@/app/context/civContext";
+import { useParams } from "next/navigation";
 import styled from "styled-components";
-import data from "../data/civils.json";
+import { Civ, civs } from "../../data";
 
 const Wrapper = styled.section`
-  margin: 2rem 4rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`;
+
+const LeftSection = styled.section`
+  padding: 4rem;
+`;
+
+const RightSection = styled.section`
+  position: relative;
 `;
 
 const GridContainer = styled.div`
   display: grid;
   gap: 1rem;
-
-  @media ${device.sm} {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media ${device.md} {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media ${device.lg} {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media ${device.xl} {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  @media ${device.xxl} {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 `;
 
 const ImageCard = styled.div`
   cursor: pointer;
   img {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -49,32 +38,77 @@ const ImageCard = styled.div`
   }
 `;
 
+const FlagImage = styled(ImageCard)`
+  img {
+    width: 50px;
+    height: 50px;
+  }
+`;
+
+const BackgroundImage = styled.div`
+  filter: grayscale(1);
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+`;
+
 const GridItem = styled.div`
   border-radius: 10px;
 `;
 
 const GridTitle = styled.h1`
+  font-size: 2rem;
+  font-weight: 700;
+`;
+
+const SubTitle = styled.p`
   font-size: 1rem;
   font-weight: 700;
 `;
 
-export default function CivPage({ slug }) {
-  const { units } = useCivs();
-  const civ = data.civs.find((civ) => civ.slug === slug);
+const Spacer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+`;
+
+export default function CivPage() {
+  const { slug } = useParams();
+
+  const civ: Civ | undefined = civs.find((c) => c.slug === slug);
+
+  if (!civ) {
+    return <p>Civilisation not found</p>;
+  }
 
   return (
-    <>
-      <Wrapper>
+    <Wrapper>
+      <LeftSection>
+        <Spacer>
+          <GridTitle>{civ.title}</GridTitle>
+          <FlagImage>
+            <img src={civ.thumbnail} alt={civ.title} />
+          </FlagImage>
+        </Spacer>
+        <SubTitle>{civ.military.barracks.name}</SubTitle>
         <GridContainer>
-          <GridItem key={index}>
-            <GridTitle>{}</GridTitle>
-            <ImageCard>
-              <img src={} alt={} />
-            </ImageCard>
-          </GridItem>
+          {civ.military.barracks.unit.map((unitImage, index) => (
+            <GridItem key={index}>
+              <ImageCard>
+                <img src={unitImage} alt={civ.military.barracks.name} />
+              </ImageCard>
+            </GridItem>
+          ))}
         </GridContainer>
-      </Wrapper>
-    </>
+      </LeftSection>
+      <RightSection>
+        <BackgroundImage>
+          <img src="https://www.ageofempires.com/wp-content/uploads/2021/06/bg-age4-civ-eng-splash-right-desk.png" />
+        </BackgroundImage>
+      </RightSection>
+    </Wrapper>
   );
 }
- */
