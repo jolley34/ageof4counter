@@ -38,6 +38,8 @@ const GridContainer = styled.div`
 
 const ImageCard = styled.div`
   cursor: pointer;
+  position: relative;
+  z-index: 10;
   img {
     width: 100px;
     height: 100px;
@@ -49,6 +51,18 @@ const ImageCard = styled.div`
     filter: grayscale(60%);
     transition: filter 0.3s ease;
   }
+`;
+
+const CounterName = styled.span`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
 `;
 
 const FlagImage = styled.div`
@@ -114,6 +128,7 @@ export default function CivPage() {
   const unitNames = Object.keys(units[0]);
 
   const [selectedUnit, setSelectedUnit] = useState<keyof Unit | null>(null);
+  const [hoveredCounter, setHoveredCounter] = useState<string | null>(null);
 
   const renderCounters = (unitName: keyof Unit) => {
     if (typeof unitName !== "string") {
@@ -168,21 +183,24 @@ export default function CivPage() {
     return null;
   };
 
-  // Uppdatera renderCounterList för att tillämpa färgen för evencounter
   const renderCounterList = (counter: Counter) => {
     return (
       <GridContainer>
         {counter.counters.map((unitName, index) => {
           const counterUnit = CounterUnits[0][unitName as keyof CounterTypes];
-          // Hämta färgen från counterlevel eller använd standardvärde "yellow"
-          const color = counter.counterlevel;
+          const color = counter.counterlevel || "yellow"; // Standardvärde "yellow" om ingen färg hittades
           return (
             <GridItem key={index}>
               {counterUnit && (
                 <ImageCard
-                  style={{ background: `${color}`, borderRadius: "10px" }}
+                  onMouseEnter={() => setHoveredCounter(counterUnit.name)}
+                  onMouseLeave={() => setHoveredCounter(null)}
+                  style={{ background: color, borderRadius: "10px" }}
                 >
                   <img src={counterUnit.image} alt={counterUnit.name} />
+                  {hoveredCounter === counterUnit.name && (
+                    <CounterName>{counterUnit.name}</CounterName>
+                  )}
                 </ImageCard>
               )}
             </GridItem>
