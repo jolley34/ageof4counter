@@ -104,6 +104,11 @@ const SubTitle = styled.p`
   font-weight: 700;
 `;
 
+const CounterTitle = styled(SubTitle)`
+  font-size: 1.5rem;
+  font-weight: 700;
+`;
+
 const Spacer = styled.div`
   display: flex;
   align-items: center;
@@ -146,38 +151,44 @@ export default function CivPage() {
       } = unit[unitName];
 
       return (
-        <div>
-          {hardcounter && hardcounter.counters.length > 0 && (
-            <>
-              <SubTitle>Hard Counter:</SubTitle>
-              {renderCounterList(hardcounter)}
-            </>
-          )}
-          {bettercounter && bettercounter.counters.length > 0 && (
-            <>
-              <SubTitle>Better Trade:</SubTitle>
-              {renderCounterList(bettercounter)}
-            </>
-          )}
-          {evencounter && evencounter.counters.length > 0 && (
-            <>
-              <SubTitle>Even Counter:</SubTitle>
-              {renderCounterList(evencounter)}
-            </>
-          )}
-          {weakcounter && weakcounter.counters.length > 0 && (
-            <>
-              <SubTitle>Weak Against:</SubTitle>
-              {renderCounterList(weakcounter)}
-            </>
-          )}
-          {nocounter && nocounter.counters.length > 0 && (
-            <>
-              <SubTitle>Counter By:</SubTitle>
-              {renderCounterList(nocounter)}
-            </>
-          )}
-        </div>
+        <>
+          <GridWrapper>
+            {hardcounter && hardcounter.counters.length > 0 && (
+              <>
+                <CounterTitle>Hard Counter:</CounterTitle>
+                {renderCounterList(hardcounter)}
+              </>
+            )}
+            {bettercounter && bettercounter.counters.length > 0 && (
+              <>
+                <CounterTitle>Better Trade:</CounterTitle>
+                {renderCounterList(bettercounter)}
+              </>
+            )}
+            {evencounter && evencounter.counters.length > 0 && (
+              <>
+                <CounterTitle>Even Counter:</CounterTitle>
+                {renderCounterList(evencounter)}
+              </>
+            )}
+            {weakcounter && weakcounter.counters.length > 0 && (
+              <>
+                <>
+                  <CounterTitle>Weak Against:</CounterTitle>
+                  {renderCounterList(weakcounter)}
+                </>
+              </>
+            )}
+            {nocounter && nocounter.counters.length > 0 && (
+              <>
+                <>
+                  <CounterTitle>Countered By:</CounterTitle>
+                  {renderCounterList(nocounter)}
+                </>
+              </>
+            )}
+          </GridWrapper>
+        </>
       );
     }
     return null;
