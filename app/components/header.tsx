@@ -60,7 +60,7 @@ export default function Header() {
       <SpaceBetween>
         <Spacer>
           <Flex>
-            <Logo>Age Of Empire IV</Logo>
+            <Logo>AOE IV</Logo>
             <LogoSub>UNIT COUNTER</LogoSub>
           </Flex>
           <NavbarWrapper>
@@ -72,7 +72,7 @@ export default function Header() {
         </Spacer>
         <NavbarWrapper>
           <NavbarItem>Search Unit</NavbarItem>
-          <NavbarItem>Settings</NavbarItem>
+          <NavbarItem>BETA.V0.1</NavbarItem>
         </NavbarWrapper>
       </SpaceBetween>
     </HeaderWrapper>

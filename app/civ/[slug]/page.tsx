@@ -40,6 +40,8 @@ const ImageCard = styled.div`
   cursor: pointer;
   position: relative;
   z-index: 10;
+  background-color: #64646453;
+  border-radius: 10px;
   img {
     width: 100px;
     height: 100px;
@@ -206,7 +208,10 @@ export default function CivPage() {
                 <ImageCard
                   onMouseEnter={() => setHoveredCounter(counterUnit.name)}
                   onMouseLeave={() => setHoveredCounter(null)}
-                  style={{ background: color, borderRadius: "10px" }}
+                  style={{
+                    background: color,
+                    borderRadius: "10px",
+                  }}
                 >
                   <img src={counterUnit.image} alt={counterUnit.name} />
                   {hoveredCounter === counterUnit.name && (
